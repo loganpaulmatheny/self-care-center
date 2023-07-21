@@ -1,9 +1,13 @@
 // ===== QUERY SELECTORS =====
-var receiveMessage = document.querySelector(".message-button");
+var receiveMessage = document.querySelector("#message-button");
 
 var zenImage = document.querySelector(".meditation-emoji");
 
-var meditationMessage = document.querySelector(".meditation-message");
+var meditationMessageBlock = document.querySelector(".meditation-message");
+
+var meditationMessage = document.querySelector("#message");
+
+var clearButton = document.querySelector("#clear-button");
 
 // ===== EVENT LISTENERS AND DATA MODEL =====
 window.addEventListener("load", createDataModel);
@@ -11,8 +15,21 @@ var currentMessage;
 var messages = [];
 
 receiveMessage.addEventListener("click", function () {
-  hideElement(zenImage);
-  displayRandomMessage();
+  var selectionMade = selectionCheck();
+  if (selectionMade === false) {
+    elementHidden(zenImage);
+  } else if (selectionMade === true) {
+    elementHidden(zenImage);
+    elementVisible(clearButton);
+    displayRandomMessage();
+  }
+});
+
+clearButton.addEventListener("click", function () {
+  currentMessage = "";
+  displayMessage();
+  elementVisible(zenImage);
+  elementHidden(clearButton);
 });
 
 // ===== FUNCTIONS =====
@@ -59,13 +76,34 @@ function randomMessage(messages, type) {
   return messageType[random];
 }
 
-function hideElement(selector) {
-  selector.classList.toggle("hidden");
-  console.log(selector);
-}
-
 function displayMessage() {
   // add a paragraph element inside meditation-message
-  var message = currentMessage.message;
-  meditationMessage.innerHTML = `<p>${message}</p>`;
+  if (currentMessage !== "") {
+    var message = currentMessage.message;
+    // console.log(message);
+    meditationMessage.innerHTML = `<p id="message" class="message">${message}</p>`;
+  } else {
+    meditationMessage.innerHTML = "";
+  }
+}
+
+function selectionCheck() {
+  var formSelection = document.querySelector('input[name="formInput"]:checked');
+  try {
+    if (formSelection === null) throw "Please make a selection";
+    return true;
+  } catch (err) {
+    currentMessage = err;
+    meditationMessage.innerHTML = `<p id="message" class="errorMessage">${currentMessage}</p>`;
+    return false;
+  }
+}
+
+function elementVisible(selector) {
+  selector.classList.toggle("hidden", false);
+  // console.log(selector);
+}
+function elementHidden(selector) {
+  selector.classList.toggle("hidden", true);
+  // console.log(selector);
 }

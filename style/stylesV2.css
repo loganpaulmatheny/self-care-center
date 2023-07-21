@@ -61,7 +61,7 @@ input[type="radio"]:checked + label {
     
 }
 
-.message-button {
+.button {
     width: 33%;
     margin: 0 auto;
     background-color: #134d71;
@@ -73,19 +73,36 @@ input[type="radio"]:checked + label {
 
 .meditation-message {
     display:flex;
-    margin: 5rem auto;
-    padding: 2rem 5rem;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5rem 1rem 1rem 1rem;
+    padding: 2rem 2.5rem 2rem 2.5rem;
     width: 50%;
     background-color: white;
     border-radius: 10px;
 }
 
 .meditation-emoji {
-    margin: 0 auto;
     height: 4rem;
     width: 4rem;
 }
 
-.hidden {
-    visibility: hidden;
+
+.message {
+    font-size:large;
 }
+
+.errorMessage {
+    color: coral;
+    font-size: larger;
+    font-weight: 800;
+}
+
+.clear {
+    width: 20%;
+}
+
+.hidden {
+    display: none;
+}
+
