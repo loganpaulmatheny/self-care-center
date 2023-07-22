@@ -28,6 +28,7 @@ receiveMessage.addEventListener("click", function () {
   var selectionMade = selectionCheck();
   if (selectionMade === false) {
     displayMessage();
+    elementHidden(likeButton);
     errorClass();
     elementHidden(zenImage);
   } else if (selectionMade === true) {
@@ -39,18 +40,14 @@ receiveMessage.addEventListener("click", function () {
 });
 
 likeButton.addEventListener("click", function () {
-  var selectionMade = selectionCheck();
-  if (selectionMade === false) {
-    elementHidden(zenImage);
-  } else if (selectionMade === true) {
-    // ADD LIKE FUNCTIONALITY HERE
-  }
+  window.location.href("view/favorites.html");
 });
 
 addMessageButton.addEventListener("click", function () {
   elementHidden(messageText);
   elementHidden(zenImage);
   elementVisible(form);
+  elementHidden(likeButton);
 });
 
 submitForm.addEventListener("click", function (event) {
@@ -79,6 +76,7 @@ clearButton.addEventListener("click", function () {
   elementVisible(zenImage);
   elementHidden(clearButton);
   elementHidden(form);
+  elementHidden(likeButton);
 });
 
 // ===== FUNCTIONS =====
@@ -118,11 +116,12 @@ function displayMessage() {
     var message = currentMessage.message;
     meditationMessage.innerHTML = `<p id="message" class="message">${message}</p>`;
     elementVisible(messageText);
+    elementVisible(likeButton);
     errorClassOff();
   } else {
     meditationMessage.innerHTML = "";
     elementHidden(messageText);
-    errorClassOff;
+    errorClassOff();
   }
 }
 
@@ -133,6 +132,7 @@ function selectionCheck() {
     return true;
   } catch (err) {
     currentMessage = { type: "error", message: err };
+    elementHidden(likeButton);
     return false;
   }
 }
