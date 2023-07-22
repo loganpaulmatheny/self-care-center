@@ -23,14 +23,13 @@ var messageText = document.querySelector("#message");
 window.addEventListener("load", createDataModel);
 var currentMessage;
 var messages = [];
-var faves;
 if (localStorage.getItem("favorites") === null) {
   console.log("no faves yet");
   faves = [];
   localStorage.setItem("favorites", JSON.stringify(faves));
 } else {
-  favorites = JSON.parse(localStorage.getItem("favorites"));
-  console.log(favorites);
+  faves = JSON.parse(localStorage.getItem("favorites"));
+  console.log(faves);
 }
 
 receiveMessage.addEventListener("click", function () {
@@ -49,7 +48,7 @@ receiveMessage.addEventListener("click", function () {
 });
 
 likeButton.addEventListener("click", function () {
-  addFavorites();
+  addFavorite();
 });
 
 addMessageButton.addEventListener("click", function () {
@@ -188,8 +187,10 @@ function createMessage(type, message) {
   return newMessage;
 }
 
-function addFavorite(favMessage) {
-  console.log(localFavorites);
+function addFavorite() {
+  var fav = currentMessage;
+  faves.push(fav);
+  localStorage.setItem("favorites", JSON.stringify(faves));
 }
 
 function viewLikePage() {
