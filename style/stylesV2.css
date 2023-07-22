@@ -10,7 +10,7 @@ black - #000000;
     border: 1px solid green;
 } */
 
-.body {
+body {
     font-family: "Quicksand", sans-serif;
     background:linear-gradient(#134d71 15%, #78a7c6, #f7e4bf 90%);
     background-repeat: no-repeat;
