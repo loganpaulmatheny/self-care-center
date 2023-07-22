@@ -83,6 +83,7 @@ input[type="radio"]:checked + label {
     font-size: medium;
     font-family: "Quicksand", sans-serif;
     cursor: pointer;
+    border: 0;
 }
 
 .user-buttons {

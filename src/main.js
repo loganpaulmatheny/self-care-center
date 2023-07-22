@@ -139,7 +139,8 @@ function selectionCheck() {
 
 function formCheck(checkInput) {
   try {
-    if (checkInput === "") throw "Please make a selection";
+    if (checkInput === "")
+      throw "Please double check the type, and enter a message";
     return true;
   } catch (err) {
     console.log(err);
