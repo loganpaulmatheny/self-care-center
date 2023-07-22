@@ -12,7 +12,8 @@
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
 
-### Contributors: [Logan Matheny](https://github.com/loganpaulmatheny)
+### Contributors: 
+[Logan Matheny](https://github.com/loganpaulmatheny)
 
 ### Learning Goals:
 [//]: <> (What were the learning goals of this project? What tech did you work with?)
