@@ -9,6 +9,12 @@ var meditationMessage = document.querySelector("#message");
 
 var clearButton = document.querySelector("#clear-button");
 
+var likeButton = document.querySelector("#like");
+
+var createMessage = document.querySelector("#add-message");
+
+var form = document.querySelector("form");
+
 // ===== EVENT LISTENERS AND DATA MODEL =====
 window.addEventListener("load", createDataModel);
 var currentMessage;
@@ -30,6 +36,21 @@ clearButton.addEventListener("click", function () {
   displayMessage();
   elementVisible(zenImage);
   elementHidden(clearButton);
+});
+
+likeButton.addEventListener("click", function () {
+  var selectionMade = selectionCheck();
+  if (selectionMade === false) {
+    elementHidden(zenImage);
+  } else if (selectionMade === true) {
+    // ADD LIKE FUNCTIONALITY HERE
+  }
+});
+
+createMessage.addEventListener("click", function () {
+  elementHidden(zenImage);
+  elementVisible(form);
+  // ADD CREATE MESSAGE FORM HERE FUNCTIONALITY HERE
 });
 
 // ===== FUNCTIONS =====

@@ -66,7 +66,11 @@ input[type="radio"]:checked + label {
     flex-direction: row;
     font-style: italic;
     /* padding: 0rem 4rem .5rem 4rem; */
-    
+    cursor: pointer;
+}
+
+.radio-label {
+    cursor: pointer;
 }
 
 .button {
@@ -78,6 +82,7 @@ input[type="radio"]:checked + label {
     font-weight: 300;
     font-size: medium;
     font-family: "Quicksand", sans-serif;
+    cursor: pointer;
 }
 
 .user-buttons {
@@ -127,3 +132,31 @@ input[type="radio"]:checked + label {
     display: none;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+#type {
+    width: auto;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+#message-input {
+    width: 300px;
+    border: 1px solid #134d71;
+}
+
+.message-input-label {
+    font-size: large;
+    margin-right: .5rem;
+}
