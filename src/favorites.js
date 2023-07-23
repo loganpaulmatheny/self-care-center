@@ -1,5 +1,14 @@
+var favoriteMessagesSection = document.querySelector(".liked-messages");
+
 window.addEventListener("load", function () {
-  console.log("getting here");
-  var parseJson = JSON.parse(localStorage.getItem("favorites"));
-  console.log(parseJson);
+  displayFavoriteMessages();
 });
+
+function displayFavoriteMessages() {
+  var parseFavorites = JSON.parse(localStorage.getItem("favorites"));
+  var favoritesString = "";
+  for (let i = 0; i < parseFavorites.length; i++) {
+    favoritesString += `<p class="message"> ${parseFavorites[i].message}</p>`;
+  }
+  favoriteMessagesSection.innerHTML = favoritesString;
+}

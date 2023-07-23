@@ -5,11 +5,11 @@ var zenImage = document.querySelector(".meditation-emoji");
 
 var meditationMessageBlock = document.querySelector(".meditation-message");
 
-var meditationMessage = document.querySelector("#message");
-
 var clearButton = document.querySelector("#clear-button");
 
 var likeButton = document.querySelector("#like");
+
+// var meditationMessage = document.querySelector("#message");
 
 var viewLikeButton = document.querySelector("#view-likes");
 
@@ -19,7 +19,7 @@ var form = document.querySelector("form");
 
 var submitForm = document.querySelector("#submit");
 
-var messageText = document.querySelector("#message");
+var messageText = document.querySelector(".message");
 
 // ===== EVENT LISTENERS AND DATA MODEL =====
 window.addEventListener("load", createDataModel);
@@ -90,6 +90,7 @@ clearButton.addEventListener("click", function () {
   elementHidden(clearButton);
   elementHidden(form);
   elementHidden(likeButton);
+  elementHidden(viewLikeButton);
 });
 
 // ===== FUNCTIONS =====
@@ -127,12 +128,12 @@ function displayMessage() {
   // add a paragraph element inside meditation-message
   if (currentMessage !== "") {
     var message = currentMessage.message;
-    meditationMessage.innerHTML = `<p id="message" class="message">${message}</p>`;
+    messageText.innerHTML = `<p id="message" class="message">${message}</p>`;
     elementVisible(messageText);
     elementVisible(likeButton);
     errorClassOff();
   } else {
-    meditationMessage.innerHTML = "";
+    messageText.innerHTML = "";
     elementHidden(messageText);
     errorClassOff();
   }
