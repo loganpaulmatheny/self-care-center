@@ -7,26 +7,42 @@
   <meta charset="utf-8" />
 </head>
 
-<body class="body">
+<body>
   <div class="container">
     <h1>✨ Self Care Center ✨</h1>
     <h2>What type of message?</h2>
     <section class="message-selection">
-      <div class="messages">
+      <div class="radios">
         <div class="radio-button">
           <input type="radio" id="affirmation" name="formInput" value="affirmation">
-          <label for="affirmation">affirmation</label>
+          <label class="radio-label" for="affirmation">affirmation</label>
         </div>
         <div class="radio-button">
           <input type="radio" id="mantra" name="formInput" value="mantra">
-          <label for="mantra">mantra</label>
+          <label class="radio-label" for="mantra">mantra</label>
         </div>
       </div>
       <button id="message-button" class="button">Receive Message</button>
     </section>
+    <section class="user-buttons">
+      <button class="button user hidden" id="like">❤️Like</button>
+      <button class="button user" id="view-likes">Liked Messages</button>
+      <button class=" button user" id="add-message">Add Message</button>
+    </section>
     <section class="meditation-message">
       <img class="meditation-emoji" src="assets/meditate.svg" alt="meditation emoji">
-      <p id="message"></p>
+      <p class="message"></p>
+      <form class="hidden">
+        <div class="form-container">
+          <select class="button" name="type" id="type">
+            <option value="affirmation">affirmation</option>
+            <option value="affirmation">mantra</option>
+          </select>
+          <label class="message-input-label" for="message">Message</label>
+          <input id="message-input" type="text" name="message" required>
+        </div>
+        <button id="submit" class="button">Submit</button>
+      </form>
     </section>
     <button id="clear-button" class="button clear hidden">Clear Messages</button>
   </div>
