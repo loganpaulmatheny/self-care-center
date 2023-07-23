@@ -161,3 +161,8 @@ form {
     font-size: large;
     margin-right: .5rem;
 }
+
+.home-button {
+    background-color: transparent;
+    margin-bottom: 1rem;
+}

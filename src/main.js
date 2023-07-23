@@ -24,7 +24,6 @@ var messageText = document.querySelector(".message");
 // ===== EVENT LISTENERS AND DATA MODEL =====
 window.addEventListener("load", createDataModel);
 var currentMessage;
-var messages = [];
 if (localStorage.getItem("favorites") === null) {
   console.log("no faves yet");
   faves = [];
