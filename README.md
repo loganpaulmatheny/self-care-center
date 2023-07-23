@@ -21,8 +21,9 @@ Opetion 2:
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
-- MVP and CYOA 1 - Error Handling: I probably worked on the base version for about 4 - 5 hours to complete the MVP with one CYOA task (basic error handling)
-- CYOA For Fun: I worked on for several days days to work on in roughly 2 - 3 hour blocks. In total, I probably coded for around 7 additional hours including research and planning to make first versions of a clear button, add a message functionality, a favorites view, implementing local storage for favorites. 
+- Turing Status: Mod1 - WK3
+- MVP and CYOA 1 - Error Handling: I chose to focus on completing the MVP and basic error handling as my assignment, but quickly finished those tasks and decided to continue to more uncharted territory! I probably worked on the base version for about 4 - 5 hours to complete the MVP with one CYOA task (basic error handling).
+- CYOA For Fun: I worked on additional functionality for 2 extra days, for around 7 additional hours. My additional features indluded a clear button, add a message functionality, a favorites view, and implementing local storage for favorites. 
 
 ### Contributors: 
 [Logan Matheny](https://github.com/loganpaulmatheny)
@@ -33,15 +34,16 @@ A couple of my learning goals for this project included:
 - Technologies and tools: CSS, HTML, JS, local storage, flexbox, basic data types (arrays and objects), query selectors, event listeners
 - Error handling: Learn the basics of error handling implementations
 - HTML & CSS: Build a basic page layout and become more comfortable with CSS Flexbox
-- Local Storage: Become comfortable leveraging local storage
 - Productive: Get faster in thinking through and breaking down a problem into steps to be executed in order
 
 ### Wins + Challenges:
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
 **Wins**
-- 
+- Radio Buttons and Input: I learned how to gain user input and utilize it to 
+- Local Storage: I learned how local storage can be utilized. 
+- 'From Scratch': This project represents my first real from scratch solo project! An exciting milestone in which I'm eager to continue. 
 
 **Challenges**
 - Views: Getting buttons, inputs, and visuals to come forward on the screen at the right times remains a challenege. The code code be refactored to have specific 'view' functions or error handling to not allow for the diverse button pattern combinations that leed to unexpected results. I solved most of these problems by trial and error and forced toggling of a function that would change `display: none`.
-- Message Input: The thing that probably took the
-- Flexbox: Getting the page to 'lool right' is probably what took the longest on this project. But I do feel I learned a great deal about flexbox and became more proficient with it by the end
+- Flexbox: Getting the page to 'lool right' is probably what took the longest on this project. But I do feel I learned a great deal about flexbox and became more proficient with it by the end.
+- Message Input: The thing that probably took the longest for the functionality was the message input block
