@@ -11,6 +11,8 @@ var clearButton = document.querySelector("#clear-button");
 
 var likeButton = document.querySelector("#like");
 
+var viewLikeButton = document.querySelector("#view-likes");
+
 var addMessageButton = document.querySelector("#add-message");
 
 var form = document.querySelector("form");
@@ -49,7 +51,10 @@ receiveMessage.addEventListener("click", function () {
 
 likeButton.addEventListener("click", function () {
   addFavorite();
+  elementVisible(viewLikeButton);
 });
+
+viewLikeButton.addEventListener("click", viewLikePage);
 
 addMessageButton.addEventListener("click", function () {
   elementHidden(messageText);
