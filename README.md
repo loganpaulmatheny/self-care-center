@@ -17,6 +17,7 @@ Opetion 2:
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+![](https://github.com/loganpaulmatheny/self-care-center/blob/main/assets/selfCareApp.gif)
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
