@@ -12,7 +12,7 @@ Option 1:
 
 Opetion 2: 
 - Fork the repository
-- Clone the repository using `git clone <copy github repository information - found vy clicking green code button>`
+- Clone the repository using `git clone <copy github repository information - found by clicking green code button>`
 - Run the application from terminal with `open index.html`
 
 ### Preview of App:
