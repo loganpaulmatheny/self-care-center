@@ -25,8 +25,8 @@ Opetion 2:
 - MVP and CYOA 1 - Error Handling: I chose to focus on completing the MVP and basic error handling as my assignment, but quickly finished those tasks and decided to continue to more uncharted territory! I probably worked on the base version for about 4 - 5 hours to complete the MVP with one CYOA task (basic error handling).
 - CYOA For Fun: I worked on additional functionality for roughly 2 extra days, for around 9 additional hours. My additional features indluded a clear button, add a message functionality, a favorites view, and implementing local storage for favorites. 
 
-### Contributors: 
-[Logan Matheny](https://github.com/loganpaulmatheny)
+### Contributors: [Logan Matheny](https://github.com/loganpaulmatheny)
+- I did have a help from my rock - shoutout to Jen Ziel. Who reminded me that querySelectors occur on page load - unless placed within a function. 
 
 ### Learning Goals:
 [//]: <> (What were the learning goals of this project? What tech did you work with?)
