@@ -2,7 +2,7 @@
 
 ### Abstract:
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
-The Self-Care Center application is a health and wellness app, that can help users start their day on a more positive note. If you're like me, I start every day thinking about a gratitude and affirmation. And this app can help you think through them, save them to remember, and even add your own! 
+The Self-Care Center application is a health and wellness app, that can help users start their day on a more positive note. If you're like me, I start every day thinking about a gratitude and affirmation - this app can help you think through them, save them to remember, and even inspire you to create your own! 
 
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
@@ -23,7 +23,7 @@ Opetion 2:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
 - Turing Status: Mod1 - WK3
 - MVP and CYOA 1 - Error Handling: I chose to focus on completing the MVP and basic error handling as my assignment, but quickly finished those tasks and decided to continue to more uncharted territory! I probably worked on the base version for about 4 - 5 hours to complete the MVP with one CYOA task (basic error handling).
-- CYOA For Fun: I worked on additional functionality for 2 extra days, for around 7 additional hours. My additional features indluded a clear button, add a message functionality, a favorites view, and implementing local storage for favorites. 
+- CYOA For Fun: I worked on additional functionality for roughly 2 extra days, for around 9 additional hours. My additional features indluded a clear button, add a message functionality, a favorites view, and implementing local storage for favorites. 
 
 ### Contributors: 
 [Logan Matheny](https://github.com/loganpaulmatheny)
@@ -40,10 +40,15 @@ A couple of my learning goals for this project included:
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
 **Wins**
 - Radio Buttons and Input: I learned how to gain user input and utilize it to 
-- Local Storage: I learned how local storage can be utilized. 
-- 'From Scratch': This project represents my first real from scratch solo project! An exciting milestone in which I'm eager to continue. 
+- Local Storage: I learned how local storage can be utilized to pass information between pages and ultimately be stored for later use (in lieu of using a database)
+- 'From Scratch': This project represents my first real from scratch solo project! An exciting milestone in which I'm eager to continue 
 
 **Challenges**
-- Views: Getting buttons, inputs, and visuals to come forward on the screen at the right times remains a challenege. The code code be refactored to have specific 'view' functions or error handling to not allow for the diverse button pattern combinations that leed to unexpected results. I solved most of these problems by trial and error and forced toggling of a function that would change `display: none`.
+- Views: Getting buttons, inputs, and visuals to come forward on the screen at the right times remains a challenege. The code code be refactored to have specific 'view' functions or error handling to not allow for the diverse button pattern combinations that leed to unexpected results. I solved most of these problems by trial and error and forced toggling of a function that would implement the property `display: none` to a given selector.
 - Flexbox: Getting the page to 'lool right' is probably what took the longest on this project. But I do feel I learned a great deal about flexbox and became more proficient with it by the end.
-- Message Input: The thing that probably took the longest for the functionality was the message input block
+- Message Input: The thing that probably took the longest for the functionality was the message input block to work properly and display new created messages.
+
+**Looking Forward**
+If time allows, I'll come back to complete several other features for this project. 
+- All Messages: View all messages on a separate page 
+- Add, delete, and edit: Be able to add, delete, and edit messages from the all messages page
